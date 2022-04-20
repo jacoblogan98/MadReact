@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <nav>
             <NavLink exact to="/">Home</NavLink>
-            <NavLink to="/form">Stories Form</NavLink>
+            <NavLink to="/form/:id">Stories Form</NavLink>
             <NavLink to="/saved">Saved Stories</NavLink>
         </nav>
     )

@@ -1,11 +1,11 @@
 import React from "react";
 import StoryList from "./StoryList"
 
-function Home() {
+function Home({ stories }) {
     return (
         <>
             <h1>Home</h1>
-            <StoryList />
+            <StoryList stories={stories}/>
         </>
     )
 }
