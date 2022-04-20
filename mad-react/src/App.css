@@ -1,1 +1,15 @@
+nav {
+    border: solid 2px red;
+    display: flex;
+    justify-content: center;
+}
 
+nav a {
+    text-decoration: none;
+    border: solid 1px blue;
+    margin: 0 1rem
+}
+
+li {
+    list-style: none;
+}
