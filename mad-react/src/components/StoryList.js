@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Story from "./Story"
 
-function StoryList({ stories }) {
+function StoryList() {
+    const [stories, setStories] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:3000/stories')
+        .then(resp => resp.json())
+        .then(fetchStories => setStories(fetchStories))
+    }, [])
+
     const renderStories = stories.map(story => {
         return <Story key={story.id} story={story}/>
     })
