@@ -1,12 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
-function Saved() {
+function Saved({ savedStories }) {
+    const renderSaved = savedStories.map(story => {
+        return (
+            <li>
+                <Link to={`/savedstory/${story.id}`}>{story.title}</Link>
+            </li>
+        )
+    })
+
     return (
-        <ul>
-            <li>Saved 1</li>
-            <li>Saved 2</li>
-            <li>Saved 3</li>
-        </ul>
+        <>
+            <h1>Saved Stories</h1>
+            <ul>
+                {renderSaved}
+            </ul>
+        </>
     )
 }
 

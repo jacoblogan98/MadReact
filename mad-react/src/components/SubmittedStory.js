@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 
 
-function SubmittedStory({ inputs }) {
+function SubmittedStory({ inputs, handleSave }) {
     const [story, setStory] = useState({})
     const [prompt, setPrompt] = useState([])
     const params = useParams()
@@ -32,12 +32,29 @@ function SubmittedStory({ inputs }) {
     })
 
     const joinedStory = mappedArr.join('')
+
+    function handleBtn() {
+        fetch('http://localhost:3000/saved-stories', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                title: story.title,
+                story: joinedStory
+            })
+        })
+        .then(resp => resp.json())
+        .then(savedStory => handleSave(savedStory))
+
+        alert('Story Saved')
+    }
     
     return (
-        <div className="finished-story">
+        <div className="story">
             <h1>{story.title}</h1>
             <h4>{joinedStory}</h4>
-
+            <button onClick={handleBtn}>Save Story</button>
         </div>
     )
 }

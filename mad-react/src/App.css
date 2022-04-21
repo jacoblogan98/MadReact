@@ -26,7 +26,7 @@ form {
 form > input {
     width: 25vw;
 }
-.finished-story{
+.story{
     border: 1px solid turquoise;
     display: flex;
     flex-direction: column;
