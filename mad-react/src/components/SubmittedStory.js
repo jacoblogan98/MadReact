@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom"
+import { useParams, useHistory } from "react-router-dom"
 
 
-function SubmittedStory({ inputs, handleSave }) {
+function SubmittedStory({ inputs }) {
     const [story, setStory] = useState({})
     const [prompt, setPrompt] = useState([])
     const params = useParams()
+    const history = useHistory()
 
     useEffect(() => {
         fetch(`http://localhost:3000/stories/${params.id}`)
@@ -33,7 +34,7 @@ function SubmittedStory({ inputs, handleSave }) {
 
     const joinedStory = mappedArr.join('')
 
-    function handleBtn() {
+    function handleSave() {
         fetch('http://localhost:3000/saved-stories', {
             method: "POST",
             headers: {
@@ -47,12 +48,17 @@ function SubmittedStory({ inputs, handleSave }) {
 
         alert('Story Saved')
     }
+
+    function handleRedo() {
+        history.push(`/form/${params.id}`)
+    }
     
     return (
         <div className="story">
             <h1>{story.title}</h1>
             <h4>{joinedStory}</h4>
-            <button onClick={handleBtn}>Save Story</button>
+            <button onClick={handleRedo}>Redo</button>
+            <button onClick={handleSave}>Save Story</button>
         </div>
     )
 }
