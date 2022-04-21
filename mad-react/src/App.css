@@ -26,3 +26,22 @@ form {
 form > input {
     width: 25vw;
 }
+.finished-story{
+    border: 1px solid turquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    border: solid 1px purple;
+    text-align: center;
+}
+
+h4 {
+    border: solid 1px orange;
+    width: 50vw;
+    height: 75vh;
+}
+

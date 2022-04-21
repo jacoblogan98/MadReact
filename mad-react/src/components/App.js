@@ -11,7 +11,6 @@ function App() {
   const [inputs, setInputs] = useState([])
 
   function handleInputs(formInputs) {
-    // console.log(formInputs)
     setInputs(formInputs)
   }
 

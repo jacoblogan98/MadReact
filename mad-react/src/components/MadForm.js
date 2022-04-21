@@ -40,7 +40,7 @@ function MadForm({ handleInputs }) {
 
         handleInputs(inputArr)
 
-        history.push("/submittedstory/:id")
+        history.push(`/submittedstory/${story.id}`)
         e.target.reset()
     }
 
