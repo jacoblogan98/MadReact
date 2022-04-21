@@ -5,14 +5,14 @@
             "blanks": [
                 "noun",
                 "adjective",
-                "noun2",
-                "noun3",
-                "adjective2",
-                "adjective3",
-                "adjective4",
-                "noun5",
-                "noun6",
-                "adjective5"
+                "noun",
+                "noun",
+                "adjective",
+                "adjective",
+                "adjective",
+                "noun",
+                "noun",
+                "adjective"
             ],
             "value": [
                 "Weather plays an important part in our ",

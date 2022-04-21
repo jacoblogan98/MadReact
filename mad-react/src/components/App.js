@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import '../App.css';
 import NavBar from "./NavBar";
 import Home from "./Home";
 import MadForm from "./MadForm";
 import Saved from "./Saved";
+import SubmittedStory from "./SubmittedStory";
 
 function App() {
+  const [inputs, setInputs] = useState([])
+
+  function handleInputs(formInputs) {
+    // console.log(formInputs)
+    setInputs(formInputs)
+  }
 
   return (
     <>
@@ -16,10 +23,13 @@ function App() {
           <Home />
         </Route>
         <Route path="/form/:id">
-          <MadForm />
+          <MadForm handleInputs={handleInputs}/>
         </Route>
         <Route path="/saved">
           <Saved />
+        </Route>
+        <Route path="/submittedstory/:id">
+          <SubmittedStory inputs={inputs}/>
         </Route>
         <Route path="*">
           <h1>404 not found.</h1>
