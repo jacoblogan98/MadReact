@@ -15,7 +15,8 @@ nav a {
     text-decoration: none;
     border: solid 1px blue;
     margin: 0;
-    color: white
+    color: white;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -54,6 +55,7 @@ form {
 
 form > input {
     width: 25vw;
+    margin: .25rem;
 }
 .story{
     border: 1px solid turquoise;
@@ -71,9 +73,41 @@ h1 {
 }
 
 h4 {
+    background-color: rgba(0, 0, 0, 0.478);
     color: white;
-    border: solid 1px orange;
+    /* border: solid 1px orange; */
     width: 50vw;
-    height: 75vh;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
+.delete-btn {
+    font-size: 1rem;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.btn {
+    font-family: Caveat;
+    color: white;
+    background-color: #F25C05;
+    border: 1px solid black;
+    border-radius: 1rem;
+    list-style: none;
+    text-align: center;
+    margin: 0.25rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #D91C0B;
+}
+
+li:hover{
+    background-color: #D91C0B;
+}

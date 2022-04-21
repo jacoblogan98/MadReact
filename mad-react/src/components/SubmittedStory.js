@@ -57,8 +57,8 @@ function SubmittedStory({ inputs }) {
         <div className="story">
             <h1>{story.title}</h1>
             <h4>{joinedStory}</h4>
-            <button onClick={handleRedo}>Redo</button>
-            <button onClick={handleSave}>Save Story</button>
+            <button className="btn" onClick={handleRedo}>Redo</button>
+            <button className="btn" onClick={handleSave}>Save Story</button>
         </div>
     )
 }

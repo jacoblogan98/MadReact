@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 
-function Saved() {
+function SavedList() {
     const [savedStories, setSavedStories] = useState([])
 
     useEffect(() => {
@@ -27,7 +27,9 @@ function Saved() {
         return (
             <li key={story.id}>
                 <Link to={`/savedstory/${story.id}`}>{story.title}</Link>
-                <button onClick={() => handleDelete(story)}>Delete</button>
+                <button 
+                className="delete-btn" 
+                onClick={() => handleDelete(story)}>X</button>
             </li>
         )
     })
@@ -42,4 +44,4 @@ function Saved() {
     )
 }
 
-export default Saved
+export default SavedList

@@ -4,7 +4,7 @@ import '../App.css';
 import NavBar from "./NavBar";
 import Home from "./Home";
 import MadForm from "./MadForm";
-import Saved from "./Saved";
+import SavedList from "./SavedList";
 import SubmittedStory from "./SubmittedStory";
 import SavedStory from "./SavedStory";
 
@@ -26,7 +26,7 @@ function App() {
           <MadForm handleInputs={handleInputs}/>
         </Route>
         <Route path="/saved">
-          <Saved />
+          <SavedList />
         </Route>
         <Route path="/submittedstory/:id">
           <SubmittedStory inputs={inputs} />
