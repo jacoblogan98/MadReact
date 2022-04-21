@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inconsolata:wght@300&display=swap');
 
 :root{
-    font-family: Caveat;
+    font-family: Inconsolata;
     background-image: url('../public/books.jpeg');
 }
 
@@ -12,6 +12,7 @@ nav {
 }
 
 nav a {
+    font-family: Caveat;
     text-decoration: none;
     /* border: solid 1px blue; */
     margin: 0;
@@ -70,6 +71,7 @@ h1 {
     font-size: 4rem;
     /* border: solid 1px purple; */
     text-align: center;
+    font-family: Caveat;
 }
 
 h4 {
@@ -91,7 +93,7 @@ h4 {
 }
 
 .btn {
-    font-family: Caveat;
+    font-family: Inconsolata;
     color: white;
     background-color: #F25C05;
     border: 1px solid black;
