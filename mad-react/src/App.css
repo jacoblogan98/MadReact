@@ -6,21 +6,21 @@
 }
 
 nav {
-    border: solid 2px red;
+    /* border: solid 2px red; */
     display: flex;
     justify-content: space-around
 }
 
 nav a {
     text-decoration: none;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
     margin: 0;
     color: white;
     font-size: 1.5rem;
 }
 
 ul {
-    border: solid 1px gray;
+    /* border: solid 1px gray; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +46,7 @@ li a {
 
 form {
     margin-top: 3rem;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +58,7 @@ form > input {
     margin: .25rem;
 }
 .story{
-    border: 1px solid turquoise;
+    /* border: 1px solid turquoise; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +68,7 @@ form > input {
 h1 {
     color: white;
     font-size: 4rem;
-    border: solid 1px purple;
+    /* border: solid 1px purple; */
     text-align: center;
 }
 
