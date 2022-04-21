@@ -45,11 +45,13 @@ function MadForm({ handleInputs }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <>
             <h1>{story.title}</h1>
-            {renderStoryForm}
-            <input className="btn" type="submit" />
-        </form>
+            <form onSubmit={handleSubmit}>
+                {renderStoryForm}
+                <input className="btn" type="submit" />
+            </form>
+        </>
     )
 }
 

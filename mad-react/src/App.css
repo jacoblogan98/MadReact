@@ -35,7 +35,7 @@ li {
     text-align: center;
     margin: 1rem 0;
     padding: 0.5rem 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     
 }
 
@@ -73,7 +73,7 @@ h1 {
 }
 
 h4 {
-    background-color: rgba(0, 0, 0, 0.478);
+    background-color: rgba(0, 0, 0, 0.617);
     color: white;
     /* border: solid 1px orange; */
     width: 50vw;
