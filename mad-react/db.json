@@ -369,5 +369,11 @@
       "id": 11
     }
   ],
-  "saved-stories": []
+  "saved-stories": [
+    {
+      "title": "Snowstorm!",
+      "story": "Weather plays an important part in our s everyday. What is weather, you ask? Accoring to  scientists, who are known as meteorologists, weather is what the  is like at any given time of the . It doesn't matter if the air is  or , it's all weather. When vapors in  clouds condense, we have  and snow. A lot of  means a  snowstorm!",
+      "id": 3
+    }
+  ]
 }

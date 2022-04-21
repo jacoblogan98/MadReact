@@ -1,17 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root{
+    font-family: Caveat;
+    background-image: url('../public/books.jpeg');
+}
+
 nav {
     border: solid 2px red;
     display: flex;
-    justify-content: center;
+    justify-content: space-around
 }
 
 nav a {
     text-decoration: none;
     border: solid 1px blue;
-    margin: 0 1rem
+    margin: 0;
+    color: white
+}
+
+ul {
+    border: solid 1px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 li {
+    background-color: #F25C05;
+    border: 1px solid black;
+    border-radius: 1rem;
     list-style: none;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: white;
 }
 
 form {
@@ -35,11 +64,14 @@ form > input {
 }
 
 h1 {
+    color: white;
+    font-size: 4rem;
     border: solid 1px purple;
     text-align: center;
 }
 
 h4 {
+    color: white;
     border: solid 1px orange;
     width: 50vw;
     height: 75vh;

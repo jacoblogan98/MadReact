@@ -4,7 +4,7 @@ import StoryList from "./StoryList"
 function Home() {
     return (
         <>
-            <h1>Home</h1>
+            <h1>MadReact</h1>
             <StoryList />
         </>
     )
