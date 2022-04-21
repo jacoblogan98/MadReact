@@ -44,8 +44,6 @@ function SubmittedStory({ inputs, handleSave }) {
                 story: joinedStory
             })
         })
-        .then(resp => resp.json())
-        .then(savedStory => handleSave(savedStory))
 
         alert('Story Saved')
     }

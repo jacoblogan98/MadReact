@@ -10,14 +10,9 @@ import SavedStory from "./SavedStory";
 
 function App() {
   const [inputs, setInputs] = useState([])
-  const [saved, setSaved] = useState([])
 
   function handleInputs(formInputs) {
     setInputs(formInputs)
-  }
-
-  function handleSave(savedStory) {
-    setSaved([...saved, savedStory])
   }
 
   return (
@@ -31,10 +26,10 @@ function App() {
           <MadForm handleInputs={handleInputs}/>
         </Route>
         <Route path="/saved">
-          <Saved savedStories={saved}/>
+          <Saved />
         </Route>
         <Route path="/submittedstory/:id">
-          <SubmittedStory inputs={inputs} handleSave={handleSave}/>
+          <SubmittedStory inputs={inputs} />
         </Route>
         <Route path="/savedstory/:id">
           <SavedStory />
